@@ -1,0 +1,65 @@
+.forgot-password-container {
+  background-color: @global_background_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+
+  h1,
+  p {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  h1 {
+    padding: .5em;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+  }
+
+  p {
+    width: 65rem;
+    text-align: center;
+    font-size: 1.31rem;
+    margin-bottom: 10rem;
+    transform: scale(1.25);
+  }
+
+  .forgot-password-form-container {
+    width: 40rem;
+    background-color: #1A1B1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.5);
+
+    .forgot-password-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        padding-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+
+      .forgot-password-input {
+        width: 25rem;
+        background-color: #1A1B1D;
+        border: 1px solid white;
+      }
+
+      .forgot-password-button {
+        background-color: rgb(35, 117, 93);
+        margin-bottom: 2.5rem;
+        border: none;
+        font-weight: bold;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+    }
+  }
+}

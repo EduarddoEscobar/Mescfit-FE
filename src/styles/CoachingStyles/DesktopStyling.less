@@ -1,0 +1,163 @@
+@import (reference) '../Theme/index.less';
+
+@coaching-plan-background: #1e1e1e;
+@pricing-background: #515151;
+
+.coaching-container {
+  background-image: @coaching_background_image;
+  overflow: hidden;
+
+  .top-separator {
+    height: 10vh;
+    background: linear-gradient(to top right,
+    @coaching-plan-background 0%,
+    @coaching-plan-background 49%,
+    rgba(0, 0, 0, 0) 51%,
+    rgba(0, 0, 0, 0) 100%);
+  }
+
+  .plan-separator {
+    height: 10vh;
+    background: linear-gradient(to bottom right,
+    @coaching-plan-background 0%,
+    @coaching-plan-background 49%,
+    @pricing-background 51%,
+    @pricing-background 100%);
+  }
+
+  .bottom-separator {
+    height: 10vh;
+    background: linear-gradient(to top right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 49%,
+    @pricing-background 51%,
+    @pricing-background 100%);
+  }
+
+  .coaching-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .coaching-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: #2d2e29;
+        font-family: @text_font_family;
+        font-weight: bold;
+        letter-spacing: -.2rem;
+        font-size: 6rem;
+      }
+
+      img {
+        height: 25vh;
+      }
+    }
+  }
+
+  .what-you-get {
+    position: relative;
+    background-color: @coaching-plan-background;
+
+    .coaching-content {
+      display: flex;
+      padding: 2%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a, h2, p {
+        color: white;
+        font-family: @coaching_font_family;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      a {
+        background-color: #3a3a3a;
+        border: none;
+        padding: 1.5% 4%;
+        font-size: 1.75rem;
+        color: #dddad9;
+      }
+
+      .description-points {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1% 0;
+
+        p {
+          width: 50%;
+          font-size: 1.5rem;
+          padding: 1% 2%;
+        }
+      }
+    }
+  }
+
+  .pricing {
+    position: relative;
+    background-color: @pricing-background;
+
+    .pricing-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2, h3, button, p {
+        font-family: @coaching_font_family;
+      }
+
+      h2 {
+        color: white;
+        text-decoration: underline;
+        font-size: 3rem;
+        margin: 2% 0;
+      }
+
+      a {
+        background-color: #d6d8d7;
+        border: none;
+        padding: 1.5% 4%;
+        font-size: 1.75rem;
+        font-family: @coaching_font_family;
+        color: #424242;
+        margin-bottom: 2%;
+      }
+
+      .pricing-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 2rem;
+
+        .pricing-item {
+          h3 {
+            color: #9af3ff;
+            text-align: center;
+            font-size: 3rem;
+            font-family: @coaching_font_family;
+          }
+
+          p {
+            color: #c8c6c5;
+            text-align: center;
+            font-size: 2rem;
+            font-family: @coaching_font_family;
+          }
+        }
+      }
+    }
+
+  }
+}

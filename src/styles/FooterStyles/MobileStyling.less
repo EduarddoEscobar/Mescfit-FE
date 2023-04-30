@@ -1,0 +1,43 @@
+@import (reference) '../Theme/index.less';
+
+@media (max-width: @s) {
+  footer {
+    padding-top: 12.5%;
+    .footer-div {
+      &.footer-links {
+        .footer-container {
+          .footer-content {
+            &.main-links {
+              a {
+                font-size: @mobile_text_font_size;
+              }
+            }
+
+            &.footer-contact {
+              a,
+              p {
+                font-size: calc(@mobile_text_font_size - 0.05rem);
+              }
+            }
+
+            &.social-links {
+              p {
+                font-size: calc(@mobile_text_font_size + 0.75rem);
+              }
+
+              .icons {
+                a {
+                  font-size: calc(@mobile_text_font_size + 2.25rem);
+                }
+              }
+            }
+
+            &.copyright {
+              padding-bottom: 25%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

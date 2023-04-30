@@ -1,0 +1,93 @@
+@import (reference) '../Theme/index.less';
+
+@h1_size: calc(@desktop_text_font_size + 4.5rem);
+@h2_size: calc(@desktop_text_font_size + 1.75rem);
+
+.landing-main {
+  height: calc(100vh - @header_size);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    color: white;
+  }
+
+  img {
+    width: 48rem;
+  }
+
+  h1 {
+    font-size: @h1_size;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.2rem;
+  }
+
+  p {
+    padding: 0 15%;
+    font-size: calc(@desktop_text_font_size + 0.5rem);
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+.landing-content {
+  padding: 2% 0;
+  font-family: @text_font_family;
+
+  h2 {
+    color: red;
+    font-family: @big_text_font_family;
+    font-size: @h2_size;
+    font-weight: 300;
+  }
+
+  .landing-about.info-section {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      width: 70%;
+      font-size: @desktop_text_font_size;
+      line-height: 1.5;
+      font-weight: bold;
+      margin-top: 1%;
+    }
+
+    .owner-picture {
+      width: 50%;
+
+      img {
+        width: 42rem;
+      }
+    }
+  }
+}
+
+.image-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &.top {
+    background-image: @landing_background_image;
+  }
+
+  &.mid {
+    background-image: @wall_text_background_image;
+  }
+
+  &.bot {
+    background-image: @testimonial_background_image;
+  }
+}

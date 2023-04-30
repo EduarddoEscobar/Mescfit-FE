@@ -1,0 +1,125 @@
+.tfa-container {
+  background-color: @global_background_color;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+
+  :not(a) {
+    color: rgb(255, 255, 255);
+  }
+
+  h1,
+  p {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  h1 {
+    padding: 2rem;
+    margin-top: 2.5rem;
+    font-size: 2.8rem;
+
+    &#title-text {
+      font-size: 3rem;
+      padding: 1.5rem;
+    }
+  }
+
+  p {
+    width: 50rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 6rem;
+
+    &.title-subtext {
+      font-size: 1.5rem;
+    }
+  }
+
+  .tfa-form-container {
+    background-color: rgb(26, 27, 28);
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+
+    &.tfa-confirmation-container {
+      width: 50rem;
+      padding: 0.5rem 0;
+    }
+
+    input {
+      width: 20rem;
+      background-color: rgb(26, 27, 28);
+    }
+
+    h2 {
+      padding: 1rem;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: rgb(255, 255, 255);
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-family: 'Roboto Condensed', sans-serif;
+      color: rgb(255, 255, 255);
+      font-size: 1.8rem;
+
+      &#resend-text {
+        font-size: 1.4rem;
+
+        a {
+          color: rgb(133, 172, 209);
+        }
+      }
+    }
+
+    .tfa-button {
+      .button {
+        width: 13rem;
+        margin-top: 1rem;
+        color: rgb(255, 255, 255);
+        background-color: rgb(35, 117, 93);
+        border: black;
+        font-size: 1.3rem;
+        padding-bottom: 2.5rem;
+        padding-top: 0.5rem;
+      }
+    }
+
+    .tfa-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .confirm-code-item {
+        transform: scaleX(1.5) scaleY(1.4);
+        margin-bottom: 1.1rem 0;
+        margin-top: 0.8rem;
+
+        .ant-form-item-explain-error {
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    .tfa-radio {
+      .ant-radio-inner,
+      .ant-radio-inner:after {
+        border-radius: 0 !important;
+      }
+
+      .ant-radio-inner:after {
+        border: none !important;
+      }
+
+      .ant-radio + span {
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

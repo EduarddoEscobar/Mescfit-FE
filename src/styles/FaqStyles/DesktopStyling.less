@@ -1,0 +1,65 @@
+@import (reference) '../Theme/index.less';
+
+.faq-container {
+  padding-bottom: @header_size;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    padding: 2% 0;
+    color: black;
+    font-family: Calibri, @text_font_family;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  .faq-collapse {
+    width: 100vw;
+    display: flex;
+    background: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .faq-item {
+      width: 90rem;
+
+      .ant-collapse-header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        font-size: calc(@desktop_text_font_size * 1.25);
+
+        .ant-collapse-header-text {
+          font-family: @text_font_family;
+          font-weight: bold;
+        }
+
+        .ant-collapse-expand-icon {
+          svg {
+            font-size: calc(@desktop_text_font_size);
+          }
+        }
+      }
+
+      .answer-text {
+        font-size: 1.15rem;
+        overflow: hidden;
+
+        div {
+          padding: 2% 0;
+        }
+      }
+    }
+
+  }
+}
+
+.faq-item {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1% 2.5%;
+  margin-top: 1rem;
+}

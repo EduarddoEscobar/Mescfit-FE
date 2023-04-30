@@ -1,0 +1,127 @@
+@import (reference) '../Theme/index.less';
+
+.testimonial-container {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  .testimonial-text {
+    padding: 0 1rem;
+
+    p {
+      font-weight: bold;
+      font-size: @desktop_text_font_size;
+      color: white;
+    }
+
+    h3 {
+      font-size: 4rem;
+      font-family: @cursive_font_family;
+      color: white;
+      padding-bottom: 2%;
+    }
+  }
+
+  .spotlight-container {
+    .spotlight-picture {
+      width: 38rem;
+      height: 24rem;
+    }
+
+    overflow: hidden;
+  }
+}
+
+.testimonial-section {
+  text-align: center;
+  padding: 2% 0;
+
+  h2 {
+    padding: 2% 0;
+    font-family: @big_text_font_family;
+    font-size: calc(@desktop_text_font_size + 1.75rem);
+    font-weight: 300;
+    color: #fe605f;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &.spotlight-testimonial {
+    background-image: @spotlight_testimonial_background_image;
+    background-size: cover;
+
+    .testimonial-container {
+      p {
+        font-size: calc(@desktop_text_font_size + 0.25rem);
+        padding: 2% 0;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  &.client-testimonials-container {
+    background-image: @client_testimonial_background_image;
+    background-size: cover;
+
+    .client-testimonials {
+      padding-top: 4%;
+
+      h2 {
+        padding-bottom: 0;
+      }
+
+      #client-testimonials-subtext {
+        padding: 1% 0;
+        color: #787874;
+        font-style: italic;
+        letter-spacing: 0.05rem;
+        font-family: @big_text_font_family;
+        font-size: calc(@desktop_text_font_size + 0.5rem);
+      }
+
+      .blue-text {
+        color: #3177d1;
+      }
+    }
+  }
+}
+
+.testimonial-form-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #28292b;
+  min-height: 80vh;
+
+  h1 {
+    font-family: @big_text_font_family;
+    font-size: calc(@desktop_text_font_size * 3.25);
+    letter-spacing: 0.1rem;
+    padding: 2% 0;
+    color: white;
+  }
+
+  .testimonial-form {
+    width: 60rem;
+
+    * {
+      font-family: "Trebuchet MS", sans-serif;
+    }
+
+    .testimonial-checkbox {
+      span {
+        color: white;
+        font-size: 1.45rem;
+      }
+    }
+
+    button {
+      transform: scale(1.125);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import (reference) '../Theme';
+
+.double-input {
+  display: flex;
+  justify-content: space-between;
+
+  .form-item {
+    width: 49%;
+  }
+}
+
+.form-item {
+  .form-input {
+    height: 5vh;
+    border-radius: calc(@desktop_text_font_size);
+    font-size: calc(@desktop_text_font_size * 0.75);
+
+    input {
+      font-family: @alternate_text_font_family;
+      font-size: calc(@desktop_text_font_size * 0.75);
+    }
+
+    &.big-input {
+      height: 20vh;
+      resize: none;
+    }
+  }
+}
+
+.submit-button {
+  button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #23395d;
+    font-size: calc(@desktop_text_font_size * 0.75);
+    padding: 2% 4%;
+
+    &:focus {
+      background-color: #23395d;
+    }
+  }
+}
